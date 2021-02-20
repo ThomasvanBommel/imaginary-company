@@ -11,3 +11,7 @@ Imaginary companies landing page
    - "Cekeh offers a unique design experience for everyone, by providing the best responsive web design"
  - A list or set of images and titles representing the product or products of the company
  - A section describing some of the company’s employees or teammates
+
+## Screenshot
+
+![alt text](screenshot.png "index.html screenshot")
