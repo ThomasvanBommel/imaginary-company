@@ -1,4 +1,157 @@
+/** RESET */
 * {
     margin:0;
     padding:0;
+}
+
+/** ROOT / REM REFERENCE */
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --logo-height: 2rem;
+}
+
+
+/** NAVIGATION */
+nav {
+    margin: 1rem; 
+    font-family: monospace;
+    display: flex;
+}
+
+#logo {
+    height: 2rem;
+    font-size: 2rem;
+}
+
+#logo img {
+    height: 2rem;
+}
+
+#logo p {
+    color: black;
+    margin-left: 0.25rem;
+    display: inline-block;
+    position: relative;
+    top: -15%;
+}
+
+#logo span {
+    color: #f50;
+}
+
+nav .spacer {
+    flex-grow: 1;
+}
+
+nav .hamburger {
+    --padding: 0.25rem;
+
+    width:  calc(var(--logo-height) - var(--padding));
+    height: calc(var(--logo-height) - var(--padding));;
+    padding: var(--padding);
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+}
+
+nav .hamburger:hover {
+    border: 1px solid gray;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+
+nav .hamburger div {
+    width: 80%;
+    height: 20%;
+    background-color: gray;
+
+    place-self: center;
+}
+
+/** CONTENT */
+body {
+    --background-gradient-color: rgba(255, 255, 255, 0.8);
+
+    background: linear-gradient( 
+                    var(--background-gradient-color), 
+                    var(--background-gradient-color) 
+                ), url("../../res/images/background.svg") 
+                no-repeat
+                center
+                center
+                fixed;
+
+    background-size: cover;
+}
+
+.statement {
+    width: max-content;
+    max-width: 80%;
+    margin: 2rem auto;
+
+    font-size: 2.5vw;
+    text-align: center;
+    opacity: 0.5;
+
+    padding: 1rem 0;
+}
+
+main .container {
+    width: max-content;
+    margin: 0 auto;
+
+    max-width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+main .container div {
+    max-height: 25rem;
+    margin: 1rem;
+    padding: 1rem;
+
+    justify-self: center;
+    overflow:hidden;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 0.5rem;
+}
+
+main .container div p {
+    line-height: 200%;
+}
+
+main .container div img {
+    max-width: 100%;
+    max-height: 15rem;
+    display:block;
+    margin: 0 auto;
+}
+
+hr {
+    opacity: 0.1;
+    margin: 2rem 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    main .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    main .container {
+        grid-template-columns: 1fr;
+    }
 }
