@@ -14,7 +14,7 @@ Imaginary companies landing page
 
 ## GitHub Page
 
-[imaginary-company.github.io/](https://thomasvanbommel.github.io/imaginary-company.github.io/)
+[imaginary-company.github.io/](https://thomasvanbommel.github.io/imaginary-company)
 
 ## Screenshot
 
