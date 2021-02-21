@@ -12,6 +12,10 @@ Imaginary companies landing page
  - A list or set of images and titles representing the product or products of the company
  - A section describing some of the company’s employees or teammates
 
+## GitHub Page
+
+[imaginary-company.github.io/](https://thomasvanbommel.github.io/imaginary-company.github.io/)
+
 ## Screenshot
 
 ![alt text](screenshot.png "index.html screenshot")
